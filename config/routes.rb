@@ -1,10 +1,9 @@
 Costpad::Application.routes.draw do
 
-
-  get "accounts/new"
+  resources :accounts
 
   match '/about', to: 'pages#about'
-  match '/signup', to: 'account#new'
+  match '/signup', to: 'accounts#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

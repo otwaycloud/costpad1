@@ -25,26 +25,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
-  <div class="row">
-  <div class="twelve columns">
- 
     <!-- Navigation -->
- 
-      <nav class="top-bar contain-to-grid fixed">
-        <ul>
-          <li class="name"><h1><%= link_to "Costpad", root_path %></h1></li>
-          <li class="toggle-topbar"><a href="#"></a></li>
-        </ul>
- 
-        <section>
-          <ul class="left">
-              <li><%= link_to "about", about_path %></li>
-              <li><%= link_to "sign up", signup_path %></li>
-          </ul>
-        </section>
-    </nav>
- 
+  <div class="row">
+    <div class="twelve columns">
+      <ul class="nav-bar">
+        <li class="name"><%= link_to "Costpad", root_path %></li>
+        <li><%= link_to "about", about_path %></li>
+        <li><%= link_to "sign up", signup_path %></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
     </div>
   </div>
    <!-- End Navigation -->
